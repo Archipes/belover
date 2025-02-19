@@ -16,7 +16,6 @@ const noTexts = [
 
 // 获取当前 URL 的 hash 部分（#user1，#user2）
 const hash = window.location.hash.substring(1);  // 去掉 # 符号
-const contentDiv = document.getElementById('question');
 
 // No 按钮点击事件
 noButton.addEventListener("click", function() {

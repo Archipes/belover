@@ -62,12 +62,15 @@ noButton.addEventListener("click", function() {
     } 
 });
 
+if (hash === 'bib')  imgSrc = "images2/hug.png"
+else imgSrc = "images/hug.png"
+   
 // Yes 按钮点击后，进入表白成功页面
 yesButton.addEventListener("click", function() {
     document.body.innerHTML = `
         <div class="yes-screen">
             <h1 class="yes-text">!!!喜欢你!! ( >᎑<)♡︎ᐝ</h1>
-            <img src="images/hug.png" alt="拥抱" class="yes-image">
+            <img src=${imgSrc} alt="拥抱" class="yes-image">
         </div>
     `;
 

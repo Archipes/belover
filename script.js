@@ -16,7 +16,8 @@ const noTexts = [
 
 // 获取当前 URL 的 hash 部分（#user1，#user2）
 const hash = window.location.hash.substring(1);  // 去掉 # 符号
-
+if (hash == 'bib') mainImage.src = "images2/heart.png";
+else mainImage.src = "images/heart.png";
 // No 按钮点击事件
 noButton.addEventListener("click", function() {
     clickCount++;

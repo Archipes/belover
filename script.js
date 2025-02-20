@@ -59,32 +59,38 @@ noButton.addEventListener("click", function() {
     if (clickCount === 1) {
         if (hash === 'bib') mainImage.src = "images2/shocked.png";
         else if (hash === "luozhixue") mainImage.src = "images1/2.jpg";
+        else if (hash === "yusheng") mainImage.src = "images3/1.gif";
         else mainImage.src = "images/shocked.png";
     } 
     if (clickCount === 2) {
         if (hash === 'bib') mainImage.src = "images2/think.png";
         else if (hash === "luozhixue") mainImage.src = "images1/3.jpg";
+        else if (hash === "yusheng") mainImage.src = "images3/2.gif";
         else mainImage.src = "images/think.png";
     } 
     if (clickCount === 3) {
         if (hash === 'bib') mainImage.src = "images2/angry.png";
         else if (hash === "luozhixue") mainImage.src = "images1/4.jpg";
+        else if (hash === "yusheng") mainImage.src = "images3/3.gif";
         else mainImage.src = "images/angry.png";
     }
     if (clickCount === 4) {
         if (hash === 'bib') mainImage.src = "images2/crying.png";
         else if (hash === "luozhixue") mainImage.src = "images1/5.jpg";
+        else if (hash === "yusheng") mainImage.src = "images3/4.gif";
         else mainImage.src = "images/crying.png";
     } 
     if (clickCount >= 5) {
         if (hash === 'bib') mainImage.src = "images2/crying.png";
         else if (hash === "luozhixue") mainImage.src = "images1/5.jpg";
+        else if (hash === "yusheng") mainImage.src = "images3/5.gif";
         else mainImage.src = "images/crying.png";
     } 
 });
 
 if (hash === 'bib')  imgSrc = "images2/hug.png"
 else if (hash === 'luozhixue')  imgSrc = "images1/6.jpg"
+else if (hash === "yusheng") imgSrc.src = "images3/6.gif";
 else imgSrc = "images/hug.png"
    
 // Yes 按钮点击后，进入表白成功页面

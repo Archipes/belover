@@ -29,6 +29,8 @@ if (hash === 'bib') {
     contentDiv.innerHTML = '<h2>孙阳溢, 可以成为我的恋人吗？</h2>';
 } else if (hash === "yusheng"){
     contentDiv.innerHTML = '<h2>你愿意接受我的爱嘛？</h2>';
+} else if (hash === "xiao"){
+    contentDiv.innerHTML = '<h2>可以成为我的恋人嘛？</h2>';
 } else {
     contentDiv.innerHTML = '<h2>可以成为我的恋人吗？</h2>';
 }

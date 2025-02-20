@@ -5,6 +5,10 @@ let mainImage = document.getElementById("mainImage");
 
 let clickCount = 0;  // 记录点击 No 的次数
 
+// 获取当前 URL 的 hash 部分（#user1，#user2）
+const hash = window.location.hash.substring(1);  // 去掉 # 符号
+const contentDiv = document.getElementById('question');
+
 // No 按钮的文字变化
 const noTexts = [
     "？你认真的吗…", 
@@ -14,12 +18,17 @@ const noTexts = [
     "不行:("
 ];
 
-// 获取当前 URL 的 hash 部分（#user1，#user2）
-const hash = window.location.hash.substring(1);  // 去掉 # 符号
-console.log(hash);
 if (hash == 'bib') mainImage.src = "images2/heart.png";
 else if (hash === "luozhixue") mainImage.src = "images1/0.jpg";
 else mainImage.src = "images/heart.png";
+
+// 根据 hash 显示不同内容
+if (hash === 'bib') {
+    contentDiv.innerHTML = '<h2>孙阳溢, 可以成为我的恋人吗？</h2>';
+} else {
+    contentDiv.innerHTML = '<h2>可以成为我的恋人吗？</h2>';
+}
+
 // No 按钮点击事件
 noButton.addEventListener("click", function() {
     clickCount++;

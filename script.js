@@ -90,7 +90,7 @@ noButton.addEventListener("click", function() {
 
 if (hash === 'bib')  imgSrc = "images2/hug.png"
 else if (hash === 'luozhixue')  imgSrc = "images1/6.jpg"
-else if (hash === "yusheng") imgSrc.src = "images3/6.gif";
+else if (hash === "yusheng") imgSrc = "images3/6.gif";
 else imgSrc = "images/hug.png"
    
 // Yes 按钮点击后，进入表白成功页面

@@ -9,8 +9,9 @@ let clickCount = 0;  // 记录点击 No 的次数
 const hash = window.location.hash.substring(1);  // 去掉 # 符号
 const contentDiv = document.getElementById('question');
 
+let noTexts;
 // No 按钮的文字变化
-const noTexts = [
+noTexts = [
     "？你认真的吗…", 
     "要不再想想？", 
     "不许选这个！ ", 
@@ -20,12 +21,15 @@ const noTexts = [
 
 if (hash == 'bib') mainImage.src = "images2/heart.png";
 else if (hash === "luozhixue") mainImage.src = "images1/0.jpg";
+else if (hash === "yusheng") mainImage.src = "images3/0.gif";
 else mainImage.src = "images/heart.png";
 
 // 根据 hash 显示不同内容
 if (hash === 'bib') {
     contentDiv.innerHTML = '<h2>孙阳溢, 可以成为我的恋人吗？</h2>';
-} else {
+} else if {
+    contentDiv.innerHTML = '<h2>你愿意接受我的爱嘛？</h2>';
+}else {
     contentDiv.innerHTML = '<h2>可以成为我的恋人吗？</h2>';
 }
 

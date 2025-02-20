@@ -16,6 +16,7 @@ const noTexts = [
 
 // 获取当前 URL 的 hash 部分（#user1，#user2）
 const hash = window.location.hash.substring(1);  // 去掉 # 符号
+console.log(hash);
 if (hash == 'bib') mainImage.src = "images2/heart.png";
 else if (hash === "luozhixue") mainImage.src = "images1/0.png";
 else mainImage.src = "images/heart.png";

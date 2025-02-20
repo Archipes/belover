@@ -27,9 +27,9 @@ else mainImage.src = "images/heart.png";
 // 根据 hash 显示不同内容
 if (hash === 'bib') {
     contentDiv.innerHTML = '<h2>孙阳溢, 可以成为我的恋人吗？</h2>';
-} else if {
+} else if (hash === "yusheng"){
     contentDiv.innerHTML = '<h2>你愿意接受我的爱嘛？</h2>';
-}else {
+} else {
     contentDiv.innerHTML = '<h2>可以成为我的恋人吗？</h2>';
 }
 

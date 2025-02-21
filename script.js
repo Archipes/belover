@@ -21,7 +21,7 @@ noTexts = [
 
 if (hash == 'bib') mainImage.src = "images2/heart.png";
 else if (hash === "luozhixue") mainImage.src = "images1/0.jpg";
-else if (hash === "yusheng") mainImage.src = "images3/0.gif";
+else if (hash === "yusheng" || hash === "beauty") mainImage.src = "images3/0.gif";
 else mainImage.src = "images/heart.png";
 
 // 根据 hash 显示不同内容
@@ -29,6 +29,8 @@ if (hash === 'bib') {
     contentDiv.innerHTML = '<h2>孙阳溢, 可以成为我的恋人吗？</h2>';
 } else if (hash === "yusheng"){
     contentDiv.innerHTML = '<h2>你愿意接受我的爱嘛？</h2>';
+} else if (hash === "beauty"){
+    contentDiv.innerHTML = '<h2>可以一辈子在一起嘛？</h2>';
 } else if (hash === "xiao"){
     contentDiv.innerHTML = '<h2>可以成为潇宝宝的恋人嘛？</h2>';
 } else {
@@ -61,38 +63,38 @@ noButton.addEventListener("click", function() {
     if (clickCount === 1) {
         if (hash === 'bib') mainImage.src = "images2/shocked.png";
         else if (hash === "luozhixue") mainImage.src = "images1/2.jpg";
-        else if (hash === "yusheng") mainImage.src = "images3/1.gif";
+        else if (hash === "yusheng" || hash === "beauty") mainImage.src = "images3/1.gif";
         else mainImage.src = "images/shocked.png";
     } 
     if (clickCount === 2) {
         if (hash === 'bib') mainImage.src = "images2/think.png";
         else if (hash === "luozhixue") mainImage.src = "images1/3.jpg";
-        else if (hash === "yusheng") mainImage.src = "images3/2.gif";
+        else if (hash === "yusheng" || hash === "beauty") mainImage.src = "images3/2.gif";
         else mainImage.src = "images/think.png";
     } 
     if (clickCount === 3) {
         if (hash === 'bib') mainImage.src = "images2/angry.png";
         else if (hash === "luozhixue") mainImage.src = "images1/4.jpg";
-        else if (hash === "yusheng") mainImage.src = "images3/3.gif";
+        else if (hash === "yusheng" || hash === "beauty") mainImage.src = "images3/3.gif";
         else mainImage.src = "images/angry.png";
     }
     if (clickCount === 4) {
         if (hash === 'bib') mainImage.src = "images2/crying.png";
         else if (hash === "luozhixue") mainImage.src = "images1/5.jpg";
-        else if (hash === "yusheng") mainImage.src = "images3/4.gif";
+        else if (hash === "yusheng" || hash === "beauty") mainImage.src = "images3/4.gif";
         else mainImage.src = "images/crying.png";
     } 
     if (clickCount >= 5) {
         if (hash === 'bib') mainImage.src = "images2/crying.png";
         else if (hash === "luozhixue") mainImage.src = "images1/5.jpg";
-        else if (hash === "yusheng") mainImage.src = "images3/5.gif";
+        else if (hash === "yusheng" || hash === "beauty") mainImage.src = "images3/5.gif";
         else mainImage.src = "images/crying.png";
     } 
 });
 
 if (hash === 'bib')  imgSrc = "images2/hug.png";
 else if (hash === 'luozhixue')  imgSrc = "images1/6.jpg";
-else if (hash === "yusheng") imgSrc = "images3/6.gif";
+else if (hash === "yusheng" || hash === "beauty") imgSrc = "images3/6.gif";
 else imgSrc = "images/hug.png";
    
 // Yes 按钮点击后，进入表白成功页面
